@@ -1,21 +1,24 @@
+/* Global Setup style */
 html {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
-}
-
-body {
-  margin: 0;
-  padding: 1rem;
   color: #061f38;
+}
+/* Reset margin */
+* {
+  margin: 0;
 }
 
 p {
   margin: 0;
   text-align: justify;
 }
-
+/* class for toggle-background.service */
+.greyBg {
+  background-color: rgb(166, 166, 166);
+}
 /* #app { */
 /* text-align: center;
   margin-top: 60px;
