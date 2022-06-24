@@ -1,5 +1,5 @@
 import "./style.css";
-import { ToggleBackground, Chart } from "./services";
+import { ToggleBackground, ChartService } from "./services";
 /**
  * @class BoostrapProject
  * @info  Class responsible for run services after browser window is loaded
@@ -11,7 +11,7 @@ class BoostrapProject {
   init() {
     this.window.onload = () => {
       new ToggleBackground(this.window);
-      new Chart();
+      new ChartService(this.window);
     };
   }
 }

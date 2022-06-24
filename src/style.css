@@ -3,23 +3,106 @@ html {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 18px;
+  font-size: 16px;
   color: #061f38;
 }
 /* Reset margin */
 * {
   margin: 0;
 }
-
 p {
   margin: 0;
   text-align: justify;
+}
+footer,
+main,
+header {
+  padding: 1rem 2rem;
 }
 /* class for toggle-background.service */
 .greyBg {
   background-color: rgb(166, 166, 166);
 }
-/* #app { */
-/* text-align: center;
-  margin-top: 60px;
-} */
+/* Styles for main section */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Container */
+.data-container {
+  border: 2px solid #000000;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+/* Button & Loader  */
+button {
+  margin-top: 2rem;
+  width: 8rem;
+  height: 2rem;
+}
+.loader {
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  animation: spin 2s linear infinite;
+  display: none;
+  margin: auto;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Chart */
+#chart {
+  width: 100% !important;
+  height: auto !important;
+  margin: 0 auto;
+}
+/* Table */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  table-layout: fixed;
+  word-wrap: break-all;
+  width: 100%;
+  margin-top: 1rem;
+}
+thead {
+  font-weight: bold;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/* Toggle disply */
+.on {
+  display: block;
+}
+/* Media - Mobile first*/
+@media only screen and (min-width: 992px) {
+  .data-container {
+    margin: 2rem 8rem;
+    height: 952px;
+  }
+  table {
+    width: 90%;
+    margin: 2rem auto;
+  }
+  #chart {
+    width: 1000px !important;
+  }
+}
